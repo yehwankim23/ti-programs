@@ -1,0 +1,24 @@
+ClrHome
+
+Disp "LOWER LIMIT"
+Input "A=",A
+Disp "UPPER LIMIT"
+Input "B=",B
+Disp "SUBINTERVAL"
+Input "N=",N
+
+(B-A)/N→W
+1→I
+0→S
+
+Lbl C
+Y₁(IW+A)→H
+HW+S→S
+
+IS>(I,N)
+Goto C
+
+Disp S
+Pause 
+
+ClrHome

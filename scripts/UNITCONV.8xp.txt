@@ -1,0 +1,168 @@
+Lbl A
+Menu(" UNIT CONVERTER","IN TO CM",1,"CM TO IN",2,"FT TO M",3,"M TO FT",4,"MI TO KM",5,"KM TO MI",6,"NEXT PAGE",7)
+
+Lbl 1
+ClrHome
+
+Input "IN=",I
+I*2.54→O
+
+Output(2,1,"CM=")
+Output(2,4,O)
+Pause 
+
+ClrHome
+Stop
+
+Lbl 2
+ClrHome
+
+Input "CM=",I
+I/2.54→O
+
+Output(2,1,"IN=")
+Output(2,4,O)
+Pause 
+
+ClrHome
+Stop
+
+Lbl 3
+ClrHome
+
+Input "FT=",I
+I/3.281→O
+
+Output(2,1,"M~=")
+Output(2,4,O)
+Pause 
+
+ClrHome
+Stop
+
+Lbl 4
+ClrHome
+
+Input "M=",I
+I*3.281→O
+
+Output(2,1,"FT~=")
+Output(2,5,O)
+Pause 
+
+ClrHome
+Stop
+
+Lbl 5
+ClrHome
+
+Input "MI=",I
+I*1.609→O
+
+Output(2,1,"KM~=")
+Output(2,5,O)
+Pause 
+
+ClrHome
+Stop
+
+Lbl 6
+ClrHome
+
+Input "KM=",I
+I/1.609→O
+
+Output(2,1,"MI~=")
+Output(2,5,O)
+Pause 
+
+ClrHome
+Stop
+
+Lbl 7
+ClrHome
+Goto B
+
+Lbl B
+Menu(" UNIT CONVERTER","LB TO KG",8,"KG TO LB",9,"GAL TO L",10,"L TO GAL",11,"F TO C",12,"C TO F",13,"PREVIOUS PAGE",14)
+
+Lbl 8
+ClrHome
+
+Input "LB=",I
+I/2.205→O
+
+Output(2,1,"KG~=")
+Output(2,5,O)
+Pause 
+
+ClrHome
+Stop
+
+Lbl 9
+ClrHome
+
+Input "KG=",I
+I*2.205→O
+
+Output(2,1,"LB~=")
+Output(2,5,O)
+Pause 
+
+ClrHome
+Stop
+
+Lbl 10
+ClrHome
+
+Input "GAL=",I
+I/(3850/1017)→O
+
+Output(2,1,"L~=")
+Output(2,4,O)
+Pause 
+
+ClrHome
+Stop
+
+Lbl 11
+ClrHome
+
+Input "L=",I
+I*(2850/1017)→O
+
+Output(2,1,"GAL~=")
+Output(2,6,O)
+Pause 
+
+ClrHome
+Stop
+
+Lbl 12
+ClrHome
+
+Input "F=",I
+(I-32)*(5/9)→O
+
+Output(2,1,"C=")
+Output(2,3,O)
+Pause 
+
+ClrHome
+Stop
+
+Lbl 13
+ClrHome
+
+Input "C=",I
+I*(9/5)+32→O
+
+Output(2,1,"F=")
+Output(2,3,O)
+Pause 
+
+ClrHome
+Stop
+
+Lbl 14
+Goto A
